@@ -142,8 +142,8 @@ def winner(board)
 end
 
 def play(board)
-  if over?(board) || won?(board)
-    turn(board)
+  if !(over?(board)) || won?(board)
+    return turn(board)
   else
     winner(board)
   end
