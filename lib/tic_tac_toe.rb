@@ -148,4 +148,3 @@ def play(board)
     winner(board)
   end
 end
-    
