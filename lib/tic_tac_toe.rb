@@ -143,8 +143,10 @@ def winner(board)
 end
 
 def play(board)
-  if !(over?(board)) && !(winner(board))
+  until over?(board) == true
     return turn(board)
+    if won?(board)
+      puts "Congratuations #{character}!"
   else
     winner(board)
   end
